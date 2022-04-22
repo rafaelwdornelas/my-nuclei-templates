@@ -13,7 +13,7 @@ requests:
   - raw:
       - | # REQUEST 1
         PUT /nuclei.json HTTP/1.1
-        Host: §token§
+        Host: {{Hostname}}
         Content-Type: application/json
 
         {"email":"{{randstr}}@example.com","password":"{{randstr_1}}","username":"{{randstr_2}}","nuclei":"insecure-firebase-database"}
